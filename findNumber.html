@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Number Game</title>
+    <style>
+        body{
+            margin: 4vw 5vw; 
+                      
+            
+        }
+        .conteiner{
+            display: grid;
+            grid-template-columns: 600px ;
+            grid-template-rows: 50px 50px 400px 50px ;
+            margin-left: auto;
+            justify-content: center;
+            background-color: darkseagreen;
+            
+        }
+        .content{
+            /* border: 1px solid; */
+            text-align: center;
+            padding-top:10px;
+            font-size: 20px;
+            
+        }
+        img{
+            opacity: 0.8;
+            border-radius: 10px;
+
+        }
+        .numberRange{
+            font-size: 30px;
+            font-weight: 600;
+
+        }
+        button{
+            border-radius: 5px;;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="conteiner">
+        <div class="content numberRange" id="range" >Guess The Number (0-100)</div>
+        <div class="content numberInput">
+            
+                <input type="number" name="number" id="inputNumber" placeholder="Enter a number (0-100)" >
+                <button type="submit" id="submit-button">CHECK</button>
+            
+        </div>
+        <div class=" gameImg">
+            <img src="./IMG/Numbers.png" alt="Game İmg" width="100%" height="100%">
+            
+        </div>
+        <div class="content ">Write The Number</div>
+        <div class="content " >Number of attemps :<span id="attempts">10</span> </div>
+    </div>
+
+    <script src="./findNumber.js"></script>
+    
+</body>
+</html>
